@@ -1,1 +1,1 @@
-# All---Assignments-Projects
+# All-Assignments-Projects
