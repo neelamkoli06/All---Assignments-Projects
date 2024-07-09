@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #FAFFAF;
+}
+
+marquee{
+    font-size: 50px;
+    padding-top: 12px;
+    
+}
+button{
+    height: 40px;
+    width: 12%;
+    font-size: 18px;
+    background-color:#96C9F4;
+    margin-top: 4%;
+    margin-left: 6%;
+    border-radius: 15px;
+}
+.input-label{
+    height: 150px;
+    width: 100%;
+    margin-top: 4%;
+    padding-top: 4%;
+    padding-left: 8%;
+}
+label{
+    font-size: 26px;
+    margin: 2%;
+}
+input{
+    height: 40px;
+    width: 20%;
+    font-size: 20px;
+    padding: 2px;
+}
+.ans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

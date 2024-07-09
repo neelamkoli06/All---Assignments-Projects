@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <marquee behavior="" scrollamount="15" direction="right">Basic Calculator</marquee>
+    </header>
+    <section>
+        <button id="Addition" onclick="setOperation('+')" value="+">Addition</button>
+        <button id="Subtraction" onclick="setOperation('-')" value="-">Subtraction</button>
+        <button id="Multiplication" onclick="setOperation('*')" value="*">Multiplication</button>
+        <button id="Division" onclick="setOperation('/')" value="/">Division</button>
+        <button id="mod" onclick="setOperation('%')" value="%">Mod</button>
+    </section>
+    <div class="input-label">
+        <label for="firstNumber">Enter First Number:</label>
+        <input type="text" id="firstNumber">
+        <label for="secondNumber">Enter Second Number:</label>
+        <input type="text" id="secondNumber">
+        <br>
+        <br>
+    </div>
+    <div class="ans">
+        <label for="operation">Operation:</label>
+        <input type="text" id="operation" >
+        <br />
+        <br />
+        <label for="ans">Ans:</label>
+        <input type="text" id="ans">
+    </div>
+
+    <script>
+        function setOperation(op) {
+            document.getElementById("operation").value = op;
+            calculate();
+        }
+
+        function calculate() {
+            const num1 = parseFloat(document.getElementById("firstNumber").value);
+            const num2 = parseFloat(document.getElementById("secondNumber").value);
+            const operation = document.getElementById("operation").value;
+            let result;
+
+            if (isNaN(num1) || isNaN(num2)) {
+                result = "Please enter valid numbers";
+            } else {
+                switch (operation) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+                        break;
+                    case '%':
+                        result = num2 !== 0 ? num1 % num2 : "Cannot divide by zero";
+                        break;
+                    default:
+                        result = "Select an operation";
+                }
+            }
+            document.getElementById("ans").value = result;
+        }
+    </script>
+</body>
+</html>
