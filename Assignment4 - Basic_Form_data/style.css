@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+marquee{
+    height: 70px;
+    width: 100%;
+    background-color: yellow;
+    font-size: 40px;
+}
+#section1{
+    width: 40%;
+    margin-top: 6%;
+    float: left;
+}
+#section2{
+    width: 40%;
+    margin-top: 6%;
+    float: left;
+    margin-left: 10%;
+}

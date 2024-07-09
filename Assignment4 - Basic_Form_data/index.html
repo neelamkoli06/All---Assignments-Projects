@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 4</title>
+    <!-- ---css file--- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- --bootstrap-- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <marquee behavior="" direction="right">Assignment - 4</marquee>
+
+        <div class="container mt-3">
+            <!-- form 1 -->
+            <form id="section1">
+                <div class="form-group">
+                    <label for="name">Enter Name:</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="number">Enter Mobile:</label>
+                    <input type="number" id="mobile" class="form-control">
+                </div>
+                <button class="btn btn-danger" id="save">SAVE</button>
+            </form>
+            <!-- form 2 -->
+            <form id="section2">
+                <div class="form-group">
+                    <label for="name2">Name:</label>
+                    <input type="text" id="name2" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="mobile2">Mobile:</label>
+                    <input type="number" id="mobile2" class="form-control" readonly>
+                </div>
+                <button class="btn btn-success" id="add-again">ADD AGAIN</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        const saveBtn = document.getElementById("save");
+        const addAgainBtn = document.getElementById("add-again");
+        const nameInput = document.getElementById("name");
+        const mobileInput = document.getElementById("mobile");
+        const nameDisplay = document.getElementById("name2");
+        const mobileDisplay = document.getElementById("mobile2");
+
+        saveBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            const name = nameInput.value;
+            const mobile = mobileInput.value;
+
+            if (name && mobile) {
+                nameDisplay.value = name;
+                mobileDisplay.value = mobile;
+            } else {
+                alert("Please enter both name and mobile");
+            }
+        });
+
+        addAgainBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            nameInput.value = "";
+            mobileInput.value = "";
+            nameDisplay.value = "";
+            mobileDisplay.value = "";
+        });
+    </script>
+</body>
+
+</html>
