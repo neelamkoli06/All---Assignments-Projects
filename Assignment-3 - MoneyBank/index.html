@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Wallet</title>
+    <!-- ------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="form-group">
+            <label for="credit">Credit:</label>
+            <input type="number" id="credit" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="debit">Debit:</label>
+            <input type="number" id="debit" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="wallet">Wallet:</label>
+            <input type="text" id="wallet" class="form-control" readonly>
+        </div>
+        <button class="btn btn-success" onclick="updateBalance('credit')">Add Balance</button>
+        <button class="btn btn-warning" onclick="updateBalance('debit')">Debit</button>
+
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>SR. NO</th>
+                    <th>Credit</th>
+                    <th>Debit</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-table"></tbody>
+        </table>
+    </div>
+
+    <script>
+        let balance = 0;
+        let transactionCount = 0;
+
+            function updateBalance(type) {
+                const amount = parseFloat(document.getElementById(type).value);
+                if (isNaN(amount) || amount <= 0) {
+                    alert(`Please enter a valid ${type} amount.`);
+                    return;
+                }
+
+                if (type === 'credit') {
+                    balance += amount;
+                } else if (type === 'debit') {
+                    if (amount > balance) {
+                        alert('Insufficient balance.');
+                        return;
+                    }
+                    balance -= amount;
+                }
+
+                transactionCount++;
+                document.getElementById('wallet').value = balance;
+                addRow(type, amount, balance);
+                document.getElementById(type).value = '';
+            }
+
+            function addRow(type, amount, balance) {
+                const table = document.getElementById('transaction-table');
+                const row = table.insertRow();
+                row.insertCell(0).innerText = transactionCount;
+                row.insertCell(1).innerText = type === 'credit' ? amount : '';
+                row.insertCell(2).innerText = type === 'debit' ? amount : '';
+                row.insertCell(3).innerText = balance;
+            }
+    </script>
+</body>
+
+</html>
