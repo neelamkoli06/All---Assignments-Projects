@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <marquee behavior="" scrollamount="15" direction="right">Assignment2</marquee>
+    </header>
+    <section>
+        <div id="box1">
+            <label for="useremail">Enter Email</label>
+            <input type="email" id="useremail" oninput="updateFields()">
+            <label for="userpassword">Enter Password</label>
+            <input type="password" id="userpassword" oninput="updateFields()">
+        </div>
+        <div id="box2">
+            <label for="anotheremail">Email from Box 1</label>
+            <input type="email" id="anotheremail" readonly>
+            <label for="anotherpassword">Password from Box 1</label>
+            <input type="password" id="anotherpassword" readonly>
+        </div>
+        <div id="box3">
+            <button onclick="togglePassword()">Show Password</button>
+        </div>
+    </section>
+
+    <script>
+        const updateFields = () => {
+            var useremail = document.getElementById('useremail').value;
+            var userpassword = document.getElementById('userpassword').value;
+
+            document.getElementById('anotheremail').value = useremail;
+            document.getElementById('anotherpassword').value = userpassword;
+        }
+
+        const togglePassword = () => {
+            var anotherpasswordField = document.getElementById('anotherpassword');
+            if (anotherpasswordField.type === 'password') {
+                anotherpasswordField.type = 'text';
+            } else {
+                anotherpasswordField.type = 'password';
+            }
+        }
+    </script>
+</body>
+
+</html>

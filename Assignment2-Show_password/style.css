@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color:chartreuse;
+}
+marquee{
+    font-size: 40px;
+    margin-top: 1%;
+}
+#box1{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+label{
+    font-size: 26px;
+    margin-left: 2%;
+}
+input{
+    height: 26px;
+    width: 22%;
+    margin-left: 1%;
+    font-size: 18px;
+    padding: 2px;
+}
+#box2{height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+button{
+    height: 36px;
+    width: 10%;
+    background-color: red;
+    font-size: 16px;
+    color: white;
+    border: none;
+}
+#box3{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
