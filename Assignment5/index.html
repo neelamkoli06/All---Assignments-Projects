@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- --bootstrap-- -->
+    <!-- ------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <button class="btn btn-danger" onclick="displayTime()" style="margin-left: 20%; margin-top: 8%;">Click Me</button>
+
+    <div id="morning-container" style="display: none; margin-left: 20%;margin-top: 4%;">
+        <img src="assests/images/sunrise.jpg" alt="morning" class="img-fluid" style="height: 300px; width: 30%;">
+        <p>Good Morning!!</p>
+    </div>
+
+    <div id="afternoon-container" style="display: none; margin-left: 20%;margin-top: 4%;">
+        <img src="assests/images/afternoon.jpeg" alt="afternoon" class="img-fluid" style="height: 300px; width: 30%;">
+        <p>Good Afternon!!</p>
+    </div>
+
+    <div id="evening-container" style="display: none; margin-left: 20%;margin-top: 4%;">
+        <img src="assests/images/evening.jpeg" alt="evening" class="img-fluid" style="height: 300px; width: 30%;">
+        <p>Good Evening!!</p>
+    </div>
+
+    <div id="night-container" style="display: none; margin-left: 20%;margin-top: 4%;">
+        <img src="assests/images/night.jpg" alt="night" class="img-fluid" style="height: 300px; width: 30%;">
+        <p>Good Night!!</p>
+    </div>
+
+    <p id="currentTime" style="margin-left: 20%;"></p>
+
+    <script>
+        function displayTime() {
+            const now = new Date();
+            document.getElementById('currentTime').innerText = now.toLocaleString();
+            const hour = now.getHours();
+
+            document.getElementById('morning-container').style.display = 'none';
+            document.getElementById('afternoon-container').style.display = 'none';
+            document.getElementById('evening-container').style.display = 'none';
+            document.getElementById('night-container').style.display = 'none';
+
+            if (hour >= 0 && hour < 12) {
+                document.getElementById('morning-container').style.display = 'block';
+            } else if (hour >= 12 && hour < 17) {
+                document.getElementById('afternoon-container').style.display = 'block';
+            } else if (hour >= 17 && hour < 20) {
+                document.getElementById('evening-container').style.display = 'block';
+            } else {
+                document.getElementById('night-container').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
