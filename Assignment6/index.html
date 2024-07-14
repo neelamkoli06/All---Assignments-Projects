@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekday or Weekend</title>
+</head>
+
+<body>
+    <h1 id="dayType"></h1>
+
+    <script>
+        function checkDay() {
+            const date = new Date();
+            const day = date.getDay(); // 0 (Sunday) to 6 (Saturday)
+
+            const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const dayName = daysOfWeek[day];
+
+            const dayType = (day === 0 || day === 6) ? 'Weekend' : 'Weekday';
+
+            document.getElementById('dayType').innerText = `Today is ${dayName}, a ${dayType}.`;
+        }
+        checkDay();
+    </script>
+</body>
+
+</html>
