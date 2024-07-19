@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+._1 {
+    height: 25px;
+    width: 20%;
+    background-color: blue;
+    float: left;
+}
+
+._2 {
+    height: 25px;
+    width: 10%;
+    background-color: pink;
+    float: left;
+}
+
+._3 {
+    height: 25px;
+    width: 10%;
+    background-color: red;
+    float: left;
+}
+
+._4 {
+    height: 25px;
+    width: 10%;
+    background-color: orange;
+    float: left;
+}
+
+._5 {
+    height: 25px;
+    width: 10%;
+    background-color: rgb(240, 118, 238);
+    float: left;
+}
+
+._6 {
+    height: 25px;
+    width: 10%;
+    background-color: rgb(9, 9, 97);
+    float: left;
+}
+
+._7 {
+    height: 25px;
+    width: 10%;
+    background-color: rgb(79, 6, 143);
+    float: left;
+}
+
+._8 {
+    height: 25px;
+    width: 20%;
+    background-color: yellow;
+    float: left;
+}
+
+._9 {
+    height: 25px;
+    width: 16.66%;
+    background-color: green;
+    float: left;
+}
+
+._10 {
+    height: 25px;
+    width: 16.66%;
+    background-color: white;
+    float: left;
+}
+
+._11 {
+    height: 25px;
+    width: 16.66%;
+    background-color: black;
+    float: left;
+}
+
+._12 {
+    height: 25px;
+    width: 16.66%;
+    background-color: blue;
+    float: left;
+}
+
+._13 {
+    height: 25px;
+    width: 16.66%;
+    background-color: yellow;
+    float: left;
+}
+
+._15 {
+    height: 50px;
+    width: 100%;
+    background-color: red;
+    float: left;
+}
+
+._16 {
+    height: 50px;
+    width: 7%;
+    background-color: green;
+    float: left;
+}
+
+._17 {
+    height: 50px;
+    width: 14.37%;
+    background-color: yellow;
+    float: left;
+}
+
+._18 {
+    height: 50px;
+    width: .5%;
+    background-color: blue;
+    float: left;
+}
+
+._19 {
+    height: 7px;
+    width: 7%;
+    background-color: blue;
+    float: left;
+}
+
+._20 {
+    height: 7px;
+    width: 14.37%;
+    background-color: yellow;
+    float: left;
+}
+
+._21 {
+    height: 7px;
+    background-color: blue;
+    width: .5%;
+    float: left;
+}

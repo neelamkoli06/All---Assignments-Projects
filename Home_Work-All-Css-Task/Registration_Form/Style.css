@@ -1,0 +1,64 @@
+    h1 {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+    }
+    
+    form {
+        height: 850px;
+        width: 50%;
+        border: 10px;
+        background-color: rgb(208, 207, 207);
+        margin-left: 350px;
+        margin-top: 20px;
+    }
+    
+    ._1 label {
+        margin-left: 200px;
+    }
+    
+    ._2 {
+        margin-left: 200px;
+    }
+    
+    ._3 label {
+        margin-left: 200px;
+    }
+    
+    ._1 input {
+        margin-top: 30px;
+        padding: 5px;
+        height: 15px;
+        width: 35%;
+    }
+    
+    ._3 input {
+        margin-top: 30px;
+        padding: 5px;
+        height: 15px;
+        width: 35%;
+    }
+    
+    button {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    
+    #_1 {
+        margin-left: 300px;
+        padding: 8px;
+    }
+    
+    #_2 {
+        padding: 8px;
+        border-radius: 5x;
+    }
+    
+    ._2 {
+        margin-top: 20px;
+    }
+    
+    #_12 {
+        height: 100px;
+    }

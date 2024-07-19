@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first {
+    height: 100px;
+    width: 10%;
+    background-color: black;
+    float: left;
+}
+
+.second {
+    height: 100px;
+    width: 10%;
+    background-color: gray;
+    float: left;
+}
+
+.third {
+    height: 100px;
+    width: 50%;
+    background-color: yellow;
+    float: left;
+}
+
+.fourth {
+    height: 100px;
+    width: 50%;
+    background-color: orange;
+    float: left;
+}
+
+.fifth {
+    height: 100px;
+    width: 33.33%;
+    background-color: gray;
+    float: left;
+}
+
+.sixth {
+    height: 100px;
+    width: 33.33%;
+    background-color: black;
+    float: left;
+}
+
+.eight {
+    height: 100px;
+    width: 16.66%;
+    background-color: rgb(239, 13, 239);
+    float: left;
+}
+
+.nine {
+    height: 100px;
+    width: 16.66%;
+    background-color: rgb(64, 9, 126);
+    float: left;
+}
+
+.ten {
+    height: 100px;
+    width: 16.66%;
+    float: left;
+    background-color: pink;
+}
+
+.eleven {
+    height: 100px;
+    width: 8.33%;
+    float: left;
+    background-color: red;
+}
+
+.twelve {
+    height: 100px;
+    width: 8.33%;
+    float: left;
+    background-color: rgb(7, 95, 7);
+}
