@@ -29,7 +29,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 .icon a{
     color: white;
@@ -41,7 +40,6 @@ header{
     align-items: right;
     justify-content: right;
     font-family: sans-serif;
-    
 }
 .icon-right p{
     margin-right: 2%;
