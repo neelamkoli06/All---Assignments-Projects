@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div id="hsla-box">
+            <header>
+                <div class="icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="icon-right">
+                    <p>+953 012 3654 896</p>
+                    <p>support@colorlib.com</p>
+                </div>
+            </header>
+            <!-- -------------------------------------------------------------- -->
+            <nav>
+                <div class="nav1">
+                    <img src="Assest/image/logo.jpeg" alt="Logo">
+                    <p style="font-size: 24px;font-family: sans-serif;font-weight: 700;">Education</p>
+                </div>
+                <div class="nav2">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- ---------------------- -->
+            <div class="h1-text">
+                <h1 id="main-heading">WE ENSURE BETTER EDUCATION <br> FOR A BETTER WORLD</h1>
+            </div>
+            <div class="text-p">
+                <p>In the history of modern astronomy, there is probably no one greater leap forward than the building
+                    and launch of the space telescope known as the Hubble.</p>
+            </div>
+            <div class="button1">
+                <button>GET STARTED</button>
+            </div>
+            <div class="input-tag">
+                <input type="range" id="fontSize" min="10" max="100" value="20">
+                <input type="range" id="brightness" min="0" max="200" value="100">
+                <input type="color" id="colorPicker">
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var fontSizeSlider = document.getElementById("fontSize");
+        var brightnessSlider = document.getElementById("brightness");
+        var colorPicker = document.getElementById("colorPicker");
+        var heading = document.getElementById("main-heading");
+
+        fontSizeSlider.oninput = function () {
+            heading.style.fontSize = fontSizeSlider.value + "px";
+        };
+
+        brightnessSlider.oninput = function () {
+            document.body.style.filter = "brightness(" + brightnessSlider.value + "%)";
+        };
+
+        colorPicker.oninput = function () {
+            heading.style.color = colorPicker.value;
+        };
+    </script>
+</body>
+
+</html>
