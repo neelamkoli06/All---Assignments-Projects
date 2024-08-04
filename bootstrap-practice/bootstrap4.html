@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- --------------------------------navbar-------------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    
+        <a href="#" class="navbar-brand"><img src="Assest/images/images.png" class="img-fluid" alt="" height="50px"
+                width="50px"></a>
+    
+        <button class="navbar-toggler" data-target="#nav" data-toggle="collapse"><span
+                class="navbar-toggler-icon"></span></button>
+    
+    
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav  m-auto">
+                <li class="nav-item mx-3 active"><a href="#" class="nav-link text-light ">Home</a></li>
+                <li class="nav-item mx-3"><a href="#" class="nav-link text-light ">About us</a></li>
+                <li class="nav-item mx-3"><a href="#" class="nav-link text-light ">Privacy Policy</a></li>
+    
+                <li class="nav-item mx-3 dropdown"><a href="#" class="nav-link text-light dropdown-toggle"
+                        data-toggle="dropdown">FAQ</a>
+    
+                    <!-- dropdown menu -->
+    
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">1</a></li>
+                        <li><a href="" class="dropdown-item">2</a></li>
+                        <li><a href="" class="dropdown-item">3</a></li>
+                    </ul>
+    
+                </li>
+                <li class="nav-item mx-3"><a href="#" class="nav-link text-light ">Blog</a></li>
+            </ul>
+    
+    
+            <div class="form-inline">
+                <!-- form handling -->
+                <div class="form-group my-2 my-lg-0">
+                    <!-- <input type="search" name="" id="" placeholder="search" class="form-control mr-2 d-none d-md-block"> -->
+                    <input type="search" name="" id="" placeholder="search" class="form-control mr-2">
+                    <button class="btn btn-outline-success my-2 ">Search</button>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+    <br>
+    <br>
+    <!-- --------------- accordion --------------------------- -->
+    <div class="accordion" id="accorddata">
+    
+        <button class="btn btn-dark display-block w-100" data-target="#data1" data-toggle="collapse">Student Data</button>
+        <div class="collapse" id="data1" data-parent="#accorddata">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quae excepturi vitae eum hic neque ad, pariatur quaerat veniam officia quidem vero adipisci aliquam ex at perferendis sequi, amet saepe! Odit neque laboriosam, distinctio assumenda, magni dolor animi quaerat nisi nulla placeat perferendis cum labore aspernatur reprehenderit ut vero rerum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, odit eos? Blanditiis earum quam culpa! Fuga sequi, quod illum itaque voluptas molestiae consequatur necessitatibus atque laboriosam possimus facere iste eius.
+            </p>
+        </div>
+    
+    
+        <button class="btn btn-warning display-block w-100" data-target="#data2" data-toggle="collapse">Teacher Data</button>
+        <div class="collapse" id="data2" data-parent="#accorddata">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, cupiditate odit. Eveniet minus excepturi laboriosam sint ipsum nisi voluptatem laborum deserunt rerum odit neque assumenda itaque, voluptas ipsa eum, natus autem perspiciatis laudantium dicta eius. Pariatur quae, nemo, minima magni placeat nihil voluptatum eaque asperiores, facere labore quam optio ipsa exercitationem mollitia dolore? Laboriosam ab error aspernatur voluptates omnis a.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis necessitatibus inventore iusto temporibus nemo eum minima dolore, expedita consequuntur facilis magni quidem corporis, aut molestias libero excepturi similique ipsam nam!
+            </p>
+        </div>
+    
+        <button class="btn btn-success display-block w-100" data-target="#data3" data-toggle="collapse">Other Staff Data</button>
+        <div class="collapse" id="data3" data-parent="#accorddata">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, eligendi consectetur debitis natus labore ad, facere autem cum dolores id repudiandae ipsam et harum dolor veniam atque veritatis! Nisi, voluptates!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil necessitatibus excepturi nulla facilis beatae blanditiis cum quia neque ab voluptatem vero architecto minus eveniet, vitae fugit placeat nemo. Voluptate, et?
+            </p>
+        </div>
+    </div>
+    <br/>
+    <hr/>
+    <!-- ----------- collapse ------------ -->
+
+    <button class="btn btn-info px-4 font-weight-bold  m-4" data-target="#data4" data-toggle="collapse">Collapse</button>
+    
+    <p class="collapse" id="data4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, earum explicabo. Eum, modi veritatis, porro neque deleniti rerum atque explicabo aliquam laborum eius recusandae molestias enim voluptatum nemo magnam rem odit sint? Corporis in nostrum impedit, soluta, asperiores quae velit eius repudiandae, ab quas quos repellendus dolor! Laborum nisi cupiditate, nulla perferendis nobis natus maxime sint blanditiis sit debitis aliquam!</p>
+    <hr>
+    <br>
+
+    <button class="btn btn-outline-danger px-4  m-4" data-target=".data5" data-toggle="collapse">MultiCollapse</button>
+    
+    <p class="collapse data5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cupiditate magni doloremque est saepe non. At neque ab, sed quia fugiat ipsa. Hic, eligendi. Doloribus esse accusantium, dolor expedita et culpa consequatur ab illo, placeat iure tenetur atque nisi. Quasi ex ad non est fugiat laudantium rerum rem. Dolor, voluptatem.
+    </p>
+    
+    
+    <div class="card w-25 float-left collapse data5">
+        <div class="card-header">
+            <h2 class="text-center">Airpods</h2>
+        </div>
+        <div class="card-body">
+            <img src="Assest/images/Airpods.jpeg" alt="" class="img-fluid" style="height: 250px;width: 250px;">
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-danger px-4 font-weight-bold mx-2">Add To Cart</button>
+            <button class="btn btn-outline-dark px-4 font-weight-bold">BUY NOW</button>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <hr/>
+
+    <!-- ------------------------------dropdown----------------------------- -->
+     <div class="dropdown">
+        <a class="btn btn-success m-4 dropdown-toggle" data-toggle="dropdown">Skills</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item">HTML</li>
+            <li class="dropdown-item">CSS</li>
+            <li class="dropdown-item">JavaScript</li>
+            <div class="dropdown-divider"></div>
+            <li class="dropdown-item">React.JS</li>
+        </ul>
+     </div>
+     <br/>
+     <hr/>
+
+     
+</body>
+</html>
