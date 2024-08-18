@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // literal way
+        // const arr = ['hello',"hi",{Obj:"1"},[10,20,30]];
+        // console.log(arr);
+        // console.log(typeof arr);
+
+        // console.log(arr[0]);
+        // console.log(arr[3]);
+        // console.log(arr[3][2]);
+        // console.log(arr[2]);
+        // console.log(arr[2].Obj);
+
+        // creating instance of an array
+        // const arr1 = new Array(10,20,30,40,50);
+        // console.log(arr1);
+        // console.log(arr1.length);
+
+
+        // for(let i=0;i<arr1.length;i++){
+        //     console.log(arr1[i]);
+        // }
+        // ------------------
+
+        // for(let keys in arr1){
+        //     console.log(arr1[keys]);
+        // }
+        // ----------------------
+        // for(let x of arr1){
+        //     console.log(x);
+        // }
+
+        // --------------methods--------
+
+        // console.log(arr1.length);
+        // console.log(arr1.push(100));
+        // console.log(arr1);
+        
+
+        // console.log(arr1.pop());
+        // console.log(arr1);
+
+
+        // console.log(arr1.unshift(100));
+        // console.log(arr1);
+
+        // console.log(arr1.shift());
+        // console.log(arr1);
+
+
+        // const arr1 = new Array(10, 20, 30, 40, 50);
+        // console.log(arr1.splice(0,2));  //10,20
+        // console.log(arr1);  //30,40,50
+
+
+        // console.log(arr1.splice(0,3));  //30,40,50
+        // console.log(arr1);   //[]
+
+
+        // const arr2 = ["html" ,"css" , "React Js" , 100 ,200, [10,20],100];
+        // console.log(arr2.length);
+        // console.log(arr2);
+
+        // console.log(arr2.at(2));  //React Js
+
+        // console.log(arr2.indexOf(100)); //3
+
+        // console.log(arr2.lastIndexOf(100));//6
+
+        // console.log(arr2.slice(0,2)); //['html', 'css']
+        // console.log(arr2);  // ['html', 'css', 'React Js', 100, 200, Array(2), 100]
+
+
+        // console.log(arr2.includes("html")); //true
+        // console.log(arr2.includes(500));  //false
+
+        // console.log(Array.isArray(arr2)); //true
+        // console.log(Array.isArray("hello")); //false
+
+        // console.log(arr2.fill("Frontend Developer"));
+        // console.log(arr2);
+
+        // --------------------------------------------
+
+        // const arr3 = ["a","b","c"];
+
+        // console.log(arr3.valueOf()); //["a","b","c"]
+
+        // console.log(arr2.slice(2,5)); //['React Js', 100, 200]
+        // console.log(arr2); //['html', 'css', 'React Js', 100, 200, Array(2), 100]
+
+        // console.log(arr2.toString()); //html,css,React Js,100,200,10,20,100
+        // console.log(arr2); ['html', 'css', 'React Js', 100, 200, Array(2), 100]
+
+        // console.log(arr2.join()) //html,css,React Js,100,200,10,20,100
+        // console.log(arr2);
+
+        // console.log(arr2.join(' * '));  //html * css * React Js * 100 * 200 * 10,20 * 100
+
+        // const str = "Hello world";
+        // console.log(str.substring(2,4));
+        // console.log(str);
+
+
+        // const arr4 = [100,200,300,400,500];
+        // const arr5 = [100,200,300,400,500,"html"];
+        // console.log(arr4.reverse()); //[500, 400, 300, 200, 100]
+
+        // console.log(arr5.reverse()) //['html', 500, 400, 300, 200, 100]
+        // ---------------------------------------------------------------
+
+        const arr6 = [1000,500,100,800,500];
+        console.log(arr6.sort()); // [100, 500, 500, 800]  ??ask
+
+        // ---------------------------------------------------------------
+        const str3 = ["A","B","D","Z","C"];
+        console.log(str3.sort());  // ['A', 'B', 'C', 'D', 'Z']
+
+        // console.log(str3.toString()); //A,B,D,Z,C
+
+        // const arr7 = [100,[200,400],600,800,["Flat"],"Array"];
+        // console.log(arr7.flat());
+
+        // console.log(Array.from(str3)); //['A', 'B', 'D', 'Z', 'C']
+        // console.log(Array.from(arr7));  //[100, Array(2), 600, 800, Array(1), 'Array']
+
+        // const str = "Neelam";
+        // console.log(Array.from(str));   //['N', 'e', 'e', 'l', 'a', 'm']
+
+        // ------------------------------------------------------------------
+        // ----String And its Methods---------------------------------------
+        // ------------------------------------------------------------------
+
+        let str2 = "Stars in the sky.";
+        // alert(str2);
+// -------------------------------------------------------------------------------------------
+
+        // let str4 = new String["MERN STACK"];
+        // console.log(str4);          //ask ??? TypeError: String.MERN STACK is not a constructor
+
+// -------------------------------------------------------------------------------------------
+        // console.log(str2.length); //Stars in the sky.
+
+        // console.log(str2);
+
+        // -------------------------------------------------------------------
+        // let empName = "Ram";
+        // console.log(empName[2]);   //m
+        // console.log(empName.length);  //3
+
+        // ----------------------------------------------------------------
+
+        // console.log(str2.slice(2,4)); //ar
+
+        // console.log(str2.substring());
+        // console.log(empName.substring(0,1)); //R
+
+        // console.log(str2.substr(2,15)); //ars in the sky.
+
+        // console.log(str2.toUpperCase()); //STARS IN THE SKY.
+        // console.log(str2.toLowerCase());  //stars in the sky.
+
+        console.log(str2.toLocaleUpperCase()); //STARS IN THE SKY.    //????ask
+        console.log(str2.toLocaleLowerCase()); // stars in the sky.  //?????ask
+
+        // console.log(str2.includes("Stars"));  //true
+
+        // console.log(str2.toString()); //Stars in the sky.
+        // console.log(str2.split())     //['Stars in the sky.']
+
+        // console.log(str2.replace("Stars","Clouds")); //Clouds in the sky.
+        // console.log(str2); //Stars in the sky.
+
+        // console.log(str2.trim()) //Stars in the sky.
+        // console.log(str2.length); //17
+
+        // str6= " Helloooo World!!! ";
+        // var result = str6.trim();
+        // console.log(result); //Helloooo World!!!
+        // console.log(str6);
+        // console.log(result.length); //17
+        // console.log(result.trim());
+        // console.log(result.length); //17     //???????ask
+
+        // console.log(result.trimStart());
+        // console.log(result.trimEnd());
+
+
+        // let str7 = "XYZ";
+        // console.log(str7.padStart(6,"*")); //***XYZ
+        // console.log(str7.padEnd(15,"#")); //XYZ############
+
+    // ---------------------- reverse string -----------------------------------
+
+    // function reverseString(str) {
+    //         return str.split("").reverse().join("");
+    //     }
+    //     reverseString("hello");
+
+
+    // -----------------------------
+
+    function reverseString(str){
+        var newStr = "";
+        for(var i=str.length-1; i<=0; i--){
+            newStr += str[i];
+        }
+        return newStr;
+    }
+    reverseString('Frontend Developer');
+
+    // ------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

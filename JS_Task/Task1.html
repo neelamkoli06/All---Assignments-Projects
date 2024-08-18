@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let SA = +prompt("Enter the amount for shopping: ");   // SA = Shopping Amount
+        var discount = 0;
+
+        if (SA < 5000 && SA > 0) {
+            document.write(`<h1>Your Amount is Less Than 5000 So there will be no discount. <h1>`);
+        }
+        else if(SA >= 5000  &&  SA < 10000){
+            discount = 5;
+        }
+        else if(SA >= 10000 && SA < 15000){
+            discount = 10;
+        }
+        else if (SA >= 15000 && SA < 20000){
+            discount = 15;
+        }
+        else if(SA >= 20000 && SA < 25000){
+            discount = 20;
+        }
+        else if (SA >= 25000){
+            discount = 30
+        }
+        else{
+            document.write(`<h1><mark>Invalid Amount!!</mark></h1>`);
+        }
+        document.write(`<h1>Shoping amount = ${SA}/-</h1>`)
+        var discount_in_rupee = SA * discount / 100;
+        document.write(`<h1>Discount of ${discount}% = ${discount_in_rupee}/- rupees.</h1>`);
+
+        let Total = SA - discount_in_rupee;
+        document.write(`<h1>You have to pay ${Total}/- rupees only !!</h1>`);
+
+    </script>
+</body>
+</html>

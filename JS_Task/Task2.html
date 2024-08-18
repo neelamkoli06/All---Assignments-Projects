@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background: border-box;
+    }
+    #div1{
+        height: 400px;
+        width: 50%;
+        background-color: orange;
+    }
+    
+</style>
+<body>
+    <div id="div1">
+    </div>
+
+    <script>
+        var color = prompt('Select the Rainbow Color = V,I,B,G,Y,O,R');
+        switch (color) {
+            case 'V': document.getElementById('div1').style.backgroundColor='#7F00FF';
+                break;
+            case 'I': document.getElementById('div1').style.backgroundColor='#4B0082';
+                break;
+            case 'B': document.getElementById('div1').style.backgroundColor='#0000FF';
+                break;
+            case 'G': document.getElementById('div1').style.backgroundColor='#00FF00';
+                break;
+            case 'Y': document.getElementById('div1').style.backgroundColor='#FFFF00';
+                break;
+            case 'O': document.getElementById('div1').style.backgroundColor='#FFA500';
+                break;
+            case 'R': document.getElementById('div1').style.backgroundColor='#FF0000';
+                break;
+            default :
+                break;
+        }
+    </script>
+</body>
+</html>

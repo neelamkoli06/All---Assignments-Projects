@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .gemini {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+
+        .gemini a i {
+            color: black;
+            font-size: 30px;
+            padding: 16px;
+        }
+
+        .output {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gemini">
+        <a href="#"><i class="fa-solid fa-robot"></i></a>
+    </div>
+
+    <div class="output" id="output"></div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+
+    <script type="module">
+        import { GoogleGenerativeAI } from "@google/generative-ai";
+
+        // Fetch your API_KEY
+        const API_KEY = "AIzaSyC2Gel07RCiR66DJ-0dehi3ecuh-8eyYPE";
+
+        // Access your API key (see "Set up your API key" above)
+        const genAI = new GoogleGenerativeAI(API_KEY);
+
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+        async function run() {
+            const prompt = "Write a story about an AI and magic";
+            const result = await model.generateContent(prompt);
+            const response = await result.response;
+            const text = await response.text();
+            document.getElementById('output').innerText = text;
+        }
+
+        run();
+    </script>
+</body>
+
+</html>
